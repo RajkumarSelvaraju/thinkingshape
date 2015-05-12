@@ -1,0 +1,48 @@
+<!--<input type="submit" value="ON" id="1" name="commit" />-->
+<!--<input type="submit" value="OFF" id="0" name="commit" />-->
+<!--<div>-->
+<!--<dialog open >This is my App</dialog>-->
+<!--</div>-->
+
+
+<!--<div id="dialog">-->
+<!--  <p>IT WORKS!!!</p>-->
+<!--</div>-->
+ 
+<!--<button id="opener">open dialog</button>-->
+<!--<button id="opener">OFF</button>-->
+<!--<script type="text/javascript">-->
+<!--$(function() {-->
+<!--    $( "#dialog" ).dialog({-->
+<!--      autoOpen: false,-->
+<!--      show: {-->
+<!--        effect: "blind",-->
+<!--        duration: 1000-->
+<!--      },-->
+<!--      hide: {-->
+<!--        effect: "explode",-->
+<!--        duration: 1000-->
+<!--      }-->
+<!--    });-->
+ 
+<!--    $( "#opener" ).click(function() {-->
+<!--      $( "#dialog" ).dialog( "open" );-->
+<!--    });-->
+<!--  });-->
+<!--</script>-->
+<div class="pull-right">
+<button onclick="showDialog()">ON</button>
+<button onclick="closeDialog()">OFF</button>
+</div>
+<dialog id="myDialog">This is my latest Application</dialog>
+<script type="text/javascript">
+var x = document.getElementById("myDialog"); 
+
+function showDialog() { 
+    x.show();
+} 
+
+function closeDialog() { 
+    x.close(); 
+} 
+</script>
