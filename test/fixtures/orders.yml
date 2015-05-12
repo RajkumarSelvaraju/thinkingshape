@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  po_no: 1
+  customer_id: 1
+  po_date: 2015-05-04
+  due_date: 2015-05-04
+
+two:
+  name: MyString
+  po_no: 1
+  customer_id: 1
+  po_date: 2015-05-04
+  due_date: 2015-05-04

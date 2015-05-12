@@ -1,0 +1,32 @@
+<div class="form-group">
+	<label class="control-label">Order Name</label>
+	<%= f.text_field :name, class: "form-control" %>
+	<% if order.errors[:name].present? %>
+    	<div class="error-message"><%=  order.errors[:name][0]%></div>
+   	<% end %>
+</div>
+<div class="form-group">
+	<label class="control-label">PO Number</label>
+	<%= f.text_field :po_no, class: "form-control" %>
+	<% if order.errors[:po_no].present? %>
+    	<div class="error-message"><%=  order.errors[:po_no][0]%></div>
+   	<% end %>
+</div>
+<div class="form-group">
+	<label class="control-label">PO Date</label><br>
+	<%= f.date_select :po_date, class: "form-control" %>
+	<% if order.errors[:po_date].present? %>
+    	<div class="error-message"><%=  order.errors[:po_date][0]%></div>
+   	<% end %>
+</div>
+<div class="form-group">
+	<label class="control-label">Due Date</label><br>
+	<%= f.date_select :due_date, class: "form-control" %>
+	<% if order.errors[:due_date].present? %>
+    	<div class="error-message"><%=  order.errors[:due_date][0]%></div>
+   	<% end %>
+</div>
+<div class="form-group">
+	<%= f.submit "Save", class: "btn btn-warning" %>
+	<%= link_to "Back", orders_path , class: "btn btn-primary" %>
+</div>

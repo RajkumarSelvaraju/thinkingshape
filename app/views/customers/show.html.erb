@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-offset-1 col-lg-10">
+            <div class="page-header">
+                <h1><small>Customer Information</small></h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-5">
+            <div class="modal-body">
+                <div class="form-group">
+                  <p><label>First Name:</label>
+                  <%= @customer.fname %></p>
+                </div>
+                <div class="form-group">
+                  <p><label>Last Name:</label>
+                  <%= @customer.lname %></p>
+                </div>
+                <div class="form-group">
+                  <p><label>Company Name:</label>
+                  <%= @customer.company %></p>
+                </div>
+                <div class="form-group">
+                  <p><label>Country:</label>
+                  <%= @customer.country %></p>
+                </div>
+                <div class="form-group">
+                  <p><label>Mobile No:</label>
+                  <%= @customer.mobile %></p>
+                </div>
+                <div class="form-group">
+                  <p><label>Email ID:</label>
+                  <%= @customer.email %></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <%= link_to 'Back', customers_path, class: "btn btn-primary" %>
+                <%= link_to "Edit", edit_customer_path(@customer), class: "btn btn-warning" %>
+                <a href="/customers/<%= @customer.id%>.pdf" class="btn btn-danger btn-sm" style="float:right;">Report</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Customers") do |sheet|
+    sheet.add_row ["ID", "First Name", "Last Name","Company","Country","Mobile","Email"]
+  @customers.each do |customer|
+    sheet.add_row [customer.id, customer.fname, customer.lname, customer.company, customer.country, customer.mobile, customer.email]
+  end
+end
+

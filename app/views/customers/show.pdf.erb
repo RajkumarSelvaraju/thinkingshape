@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            printout
+        </title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+        body
+        { 
+          font-family: 'Open Sans', sans-serif;
+        }
+        .wrapper
+        { 
+          margin:0 auto; 
+          width:800px; 
+          padding:20px 0;
+        }
+        .wrapper table
+        { 
+          font-size:12px;
+        }
+        .wrapper table td
+        { 
+          text-align:center;
+        }
+        h2
+        { 
+          font-size:18px; 
+          font-weight:bold;
+        }
+        h4
+        { 
+          font-size:14px; 
+          font-weight:bold;
+        }
+        .textaligncenter
+        { 
+          text-align:center;
+        }
+        .cls
+        { 
+          clear:both;
+        }
+        .side
+        { 
+          width:100%;
+        }
+        .leftside
+        { 
+          width:50%; 
+          float:left;
+        }
+        .padding-left: 
+        { 
+          width:50%; 
+          float:left;
+        }
+        .rightside
+        {
+          width:50%; 
+          float:left;
+        }
+        .leftside label,.rightside label 
+        {
+          float: left;
+          padding: 5px 10px; 
+          font-weight:bold;
+          width: 35%; 
+          font-size:12px;
+        }
+        .label_content 
+        {
+          padding: 5px 0;
+          font-size:12px; 
+          width:70%; 
+          float: right; 
+          word-wrap:break-word; 
+          overflow: hidden;
+        }
+        .label_content1 
+        {
+          padding: 2px 0;
+          font-size:12px; 
+          width:20%;
+          float: left;  
+          word-wrap:break-word; 
+          overflow: hidden;
+        }
+        .label_content_top 
+        {
+          padding: 5px 0;
+          font-size:12px;
+        }
+        label 
+        {
+          float: left;
+          padding: 5px 10px; 
+          font-weight:bold; 
+          width: 25%; 
+          font-size:12px;
+        }
+        .line
+        { 
+          border-bottom:1px solid #989898; 
+          height:1px; 
+          padding:25px 0 0;
+        }
+        .paddingbottom
+        { 
+          padding-bottom: 50px;
+        }
+        .logo
+        {
+          height: 50px; 
+          border-bottom:5px solid #0085C8; 
+          font-size: 30px; 
+          text-align: center;
+        }
+        .content-wrap
+        {
+          width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Wrapper Start-->
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-offset-1 col-lg-10">
+                  <div class="page-header">
+                      <h1><small>Customer Information</small></h1>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-offset-2 col-lg-5">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <p><label>First Name:</label>
+                            <%= @customer.fname %></p>
+                        </div>
+                        <div class="form-group">
+                            <p><label>Last Name:</label>
+                            <%= @customer.lname %></p>
+                        </div>
+                        <div class="form-group">
+                            <p><label>Company Name:</label>
+                            <%= @customer.company %></p>
+                        </div>
+                        <div class="form-group">
+                            <p><label>Country:</label>
+                            <%= @customer.country %></p>
+                        </div>
+                        <div class="form-group">
+                            <p><label>Mobile No:</label>
+                            <%= @customer.mobile %></p>
+                        </div>
+                        <div class="form-group">
+                            <p><label>Email ID:</label>
+                            <%= @customer.email %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

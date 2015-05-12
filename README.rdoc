@@ -1,0 +1,58 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+* Devise Gems
+FOllowing procedure link http://guides.railsgirls.com/devise/
+STEP 1: ADD DEVISE GEM TO YOUR GEMFILE
+        gem 'devise'
+        then
+        bundle install
+STEP 2:SET UP DEVISE GEM TO YOUR APP
+        rails g devise:install (in ur terminal)
+STEP 3:CONFIGURE DEVISE
+        config/environments/development.rb(Open this location and add the below line)
+        config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+        
+        app/views/layouts/application.html.erb(Open the location and add the follow code)
+        <% if notice %>
+          <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+        right above the <%= yield %>
+STEP 4: SETUP THE USER MODEL
+        rails g devise user
+        rake db:migrate
+
+
+*Heroku Steps
+Follow the procedure http://guides.railsgirls.com/heroku/
+* Live Running App link in heroku
+peaceful-refuge-8544.herokuapp.com
+*we are using SSH to download application from github
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
