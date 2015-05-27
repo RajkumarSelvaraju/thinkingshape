@@ -5,6 +5,7 @@ class CustomersController < ApplicationController
   end
 
   def new
+    #byebug
     @customer = Customer.new
   end
   
