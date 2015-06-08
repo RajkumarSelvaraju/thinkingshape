@@ -61,7 +61,7 @@ group :development, :test do
   #gem 'spring', '~>1.3.4'
 end
 
-# Report
+# Generating Excel Report
 gem 'acts_as_xlsx'
 gem 'axlsx', '~> 2.0'
 gem 'axlsx_rails'
@@ -69,13 +69,12 @@ gem 'axlsx_rails'
 # Chart
 gem 'chart-js-rails'
 
+#creating chart in easy methods
 gem 'chartkick'
 gem 'groupdate'
 gem 'active_median'
 gem 'hightop'
 
-#pdf
-#pdf
+# Generating PDF reports
 gem 'wkhtmltopdf-binary', '~> 0.9.9'
-#gem 'wkhtmltopdf-heroku'
 gem 'wicked_pdf'
